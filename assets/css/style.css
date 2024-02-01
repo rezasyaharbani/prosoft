@@ -90,8 +90,22 @@ body{
   
   /* style for section 2 */
   .section2{
-    height: 90vh;
+    height: fit-content;
     width: 100vw;
     position: absolute;
     top: 90vh;
+  }
+
+  .img .circle{
+    width: 300px;
+  }
+
+  .section2 .logo{
+    width: 175px;
+    position: absolute;
+    margin-top: 65px;
+  }
+
+  .section2 .description{
+    font-size: 25px;
   }
