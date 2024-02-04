@@ -108,4 +108,113 @@ body{
 
   .section2 .description{
     font-size: 25px;
+    padding-right: 160px;
+  }
+
+  .impact{
+    position: absolute;
+    top: 160vh;
+  }
+
+  .impact .earth img{
+    width: 260px;
+  }
+
+  .comunities, .earth{
+    color: #fff;
+    margin: 0 13rem;
+  }
+
+  .comunities{
+    margin-top: 10.5rem;
+  }
+
+  .impact-background img{
+    position: absolute;
+    z-index:  -1;
+    width: 100vw;
+    height: 150vh;
+    top: -200px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    object-fit: cover;
+  }
+
+  .partners{
+    position: absolute;
+    top: 295vh;
+    width: 100vw;
+  }
+
+  .partners h1{
+    margin-bottom:  4rem;
+    color: #fff;
+    text-align: center;
+  }
+
+  .logo1, .logo2{
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem 8rem;
+    align-items: center;
+  }
+
+  .logos img:hover{
+    filter: none;
+  }
+
+  .logos img{
+    height: 5rem;
+    filter: grayscale(100%);
+  }
+
+  .pnc-logo{
+    height: 3.4rem !important;
+  }
+
+  footer{
+    position: absolute;
+    top: 300vh;
+    width: 100vw;
+  }
+
+  .footer-bg{
+    position: absolute;
+    z-index:  -1;
+    border: 1px solid #fff;
+  }
+
+  .footer-logo img{
+    height: 6rem;
+  }
+
+  .footer-content{
+    margin-top: 55rem;
+  }
+
+  /* style hanya untuk  mobile */
+  @media only screen and (max-width: 600px){
+    .earth, .comunities{
+      background-color: #222325;
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    .comunities{
+      margin-top: 2rem !important;
+    }
+
+    .section2 .description{
+      font-size: 25px;
+      padding: 0 30px;
+      text-align: center;
+    }
+
+    .comunities, .earth{
+      margin: 0 1rem;
+    }
+
+    .impact-background img{
+      display: none;
+    }
   }
