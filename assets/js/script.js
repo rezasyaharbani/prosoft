@@ -45,21 +45,12 @@ function checkScroll() {
 
             // Cek apakah elemen berada dalam viewport
             if (elementPosition.top < window.innerHeight && elementPosition.bottom >= 0) {
+                // element.classList.remove('d-none'); // Hapus class d-none untuk menampilkan elemen
                 element.classList.remove(`animate__animated`); // Hapus kelas animasi yang diinginkan
                 element.classList.remove(`animate__${animationIn}`); // Hapus kelas animasi yang diinginkan
 
                 element.classList.add('animate__animated'); // Tambahkan base class animate untuk memulai animasi
                 element.classList.add(`animate__${animationIn}`); // Tambahkan kelas animasi yang diinginkan
-            }
-
-            // Cek apakah elemen berada dalam viewport
-            if (elementPosition.top < window.innerHeight && elementPosition.top <= 0) {
-                {
-                    element.classList.remove(`animate__${animationIn}`); // Hapus kelas animasi yang diinginkan
-                    element.classList.add(`animate__${animationOut}`); // Tambahkan kelas animasi yang diinginkan
-                }
-            } else {
-                element.classList.remove(`animate__${animationOut}`); // Hapus kelas animasi yang diinginkan
             }
         }
     }
