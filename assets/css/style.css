@@ -38,9 +38,6 @@ body{
 .nav-link.tilt-up:hover {
   transform: translateY(-5px); /* Efek tilt up saat dihover */
 }
-.nav-item:hover{
-    color: #fff;
-}
 
 .hero-overlay{
     height: 90vh;
@@ -153,7 +150,7 @@ body{
 
   footer{
     position: absolute;
-    top: 360vh;
+    top: 356vh;
     width: 100vw;
   }
 
