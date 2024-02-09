@@ -1,33 +1,5 @@
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Karla:ital,wght@0,200;0,400;0,600;0,700;1,200;1,400;1,600;1,700&display=swap');
-/**
- * ----------------------------------------
- * animation slide-in-bottom
- * ----------------------------------------
- */
- @-webkit-keyframes slide-in-bottom {
-  0% {
-    -webkit-transform: translateY(1000px);
-            transform: translateY(1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes slide-in-bottom {
-  0% {
-    -webkit-transform: translateY(1000px);
-            transform: translateY(1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-}
+
 
 *{
   font-family: 'Karla', sans-serif;
@@ -56,8 +28,19 @@ body{
 
 .nav-link{
     color: #aaa !important;
+    transition: transform 0.3s ease;
 }
 
+.nav-link:hover {
+  color: white !important; /* Mengubah warna menjadi putih saat dihover */
+}
+
+.nav-link.tilt-up:hover {
+  transform: translateY(-5px); /* Efek tilt up saat dihover */
+}
+.nav-item:hover{
+    color: #fff;
+}
 
 .hero-overlay{
     height: 90vh;
