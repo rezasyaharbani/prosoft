@@ -163,7 +163,7 @@ footer{
   background-image: url('/assets/img/bg-footer2.png');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
 }
 
 .footer-bg img {
