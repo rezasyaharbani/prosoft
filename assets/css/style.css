@@ -153,28 +153,21 @@ body {
   height: 3.4rem !important;
 }
 
-footer {
+footer{
+  background-color: #14121A;
+}
+
+.footer-container {
   height: 632px;
   width: 100vw;
   background-image: url('/assets/img/bg-footer2.png');
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: top;
+  background-size: cover;
+  background-position: center;
 }
-
-/* .footer-content{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-} */
 
 .footer-bg img {
   width: 100vw;
-}
-
-.footer-content{
-  background-color: #14121A;
 }
 
 .footer-logo img {
@@ -269,9 +262,9 @@ footer .copyright {
     height: 1.7rem !important;
   }
 
-  footer {
-    background-color: #14121A;
-    /* z-index: -2; */
+  .footer-container {
+    background-size: 100%;
+    background-position: top;
   }
 
   .footer-content {
