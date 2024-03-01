@@ -5,7 +5,7 @@ body{
 }
 
 .hero{
-    height: 95vh;
+    height: 30rem;
 }
 
 .hero-title{
@@ -50,10 +50,12 @@ body{
 .vision-mission .container{
     position: absolute;
     z-index: 1;
+    margin-top: 5rem;
 }
 
 .vision-mission .card{
-    background-color: #272432;
+    background-color: #121117;
+    border: 1px solid #32386a;
 }
 
 .vision-mission .card-image img{
@@ -64,7 +66,7 @@ body{
     position:absolute;
     z-index: -2;
     width: 100vw;
-    height: 95vh;
+    height: 70vh;
     object-fit: cover;
 }
 
@@ -72,6 +74,80 @@ body{
     position: absolute;
     z-index: -1;
     width: 100vw;
-    height: 95vh;
-    background-image: linear-gradient(0deg, #12111714, #121117);
+    height: 70vh;
+    background-image: linear-gradient(0deg, #030204, #12111714, #121117);
+}
+
+.problem-solution{
+    position: relative;
+    background-color: #030204;
+}
+
+.problem-solution .container{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.problem-solution h1{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 4rem;
+
+}
+
+.problem h4, .solution h4{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.problem p, .solution p{
+    color: #8D8D8D;
+    text-align: center;
+}
+
+.footer-container {
+    background-image: url('/assets/img/footer-bg2.png');
+  }
+
+/* for phone */
+@media (max-width: 768px){
+    .hero{
+        margin: 0 2rem;
+    }
+
+    .hero-title{
+        margin-top: 9rem;
+        font-size: 2rem;
+    }
+
+    .hero .button{
+        margin: 0.5rem 0.5rem .5rem 0.5rem;
+        padding: 1rem;
+        width: 15rem;
+        font-size: 1rem;
+    }
+
+    .vision-mission video{
+        height: 95vh;
+    }
+    
+    .vision-overlay{
+        height: 95vh;
+    }
+
+    .vision-mission .card-image img{
+        width: 15rem;
+        margin-bottom: 1rem;
+    }
+
+    .vision-mission .card-title{
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    .problem h4, .solution h4{
+        margin-bottom: 1rem;
+    }
 }
