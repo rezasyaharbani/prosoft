@@ -108,7 +108,7 @@ body{
 
 .footer-container {
     background-image: url('/assets/img/footer-bg2.png');
-  }
+}
 
 /* for phone */
 @media (max-width: 768px){
