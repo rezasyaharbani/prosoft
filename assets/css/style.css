@@ -16,6 +16,32 @@ body {
   overflow-x: clip;
 }
 
+.dropdown:hover .dropdown-menu, .dropdown-center:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* remove the gap so it doesn't close */
+}
+
+.dropdown:hover .dropdown-menu li, .dropdown-center:hover .dropdown-menu li {
+  animation: fadeIn 0.3s;
+}
+
+.dropdown-menu {
+  padding: 2rem 1.5rem;
+  background-color: #222;
+}
+
+.dropdown-menu li a:hover{
+  background-color: #222 !important;
+}
+
+.dropdown-menu li {
+  padding: 1rem 0;
+}
+
+.dropdown-menu li a{
+  color: #aaa;
+}
+
 .hero-video {
   position: absolute;
   top: 0;

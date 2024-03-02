@@ -1,0 +1,158 @@
+body {
+    background-color: #111020;
+    background-image: url('../img/testnet-hero.jpg');
+    background-repeat: no-repeat;
+    background-position: 30vw 0%;
+}
+
+.hero {
+    height: 88vh;
+    margin: 0;
+    padding: 0 5rem;
+}
+
+.hero-title {
+    padding-top: 13rem;
+    font-size: 2.3rem;
+    padding-bottom: 1rem;
+    color: #fff;
+}
+
+.hero p {
+    color: #99989C;
+}
+
+.getStarted {
+    margin-top: 2rem;
+}
+
+.getStarted h2 {
+    color: #fff;
+    font-weight: 400;
+}
+
+.getStarted-content {
+    color: #99989C;
+}
+
+.map {
+    margin-top: 5rem;
+    background: rgb(30, 30, 63);
+    background: radial-gradient(circle, #1e1e3f 10%, #11102000 29%);
+}
+
+.extension {
+    padding-top: 7rem;
+    padding-bottom: 17rem;
+    background: #110f21;
+    background: linear-gradient(180deg, #110f21 0%, #030305 100%);
+}
+
+.extension h2 {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.applications {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.applications .app {
+    display: flex;
+    margin-bottom: 2rem;
+    margin: 2rem;
+    width: 20rem;
+}
+
+.app img {
+    margin-right: 1.5rem;
+    width: 56px;
+    height: 56px;
+}
+
+.app-title a {
+    display: block;
+    font-weight: 200;
+    color: #99989C;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.app-title a:hover {
+    color: #fff;
+}
+
+.app-title {
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.thanks {
+    position: absolute;
+    background-color: #222;
+    margin: 5vw;
+    margin-top: -10rem;
+    padding: 5vw 15vw;
+    border-radius: 1rem;
+    color: #99989C;
+    text-align: center;
+}
+
+.thanks h1 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.thanks p {
+    margin-bottom: 3rem;
+}
+
+.socmed a {
+    margin: 0 .3rem;
+    color: #99989C;
+    text-decoration: none;
+}
+
+.footer-container {
+    background-image: url('/assets/img/footer-bg2.png');
+}
+
+/* for phone */
+@media (max-width: 768px) {
+    .hero {
+        padding: 0 2rem;
+    }
+
+    .hero-title {
+        padding-top: 10rem;
+        text-align: center;
+    }
+
+    .hero p {
+        text-align: center;
+    }
+
+    .getStarted h2 {
+        text-align: center;
+    }
+
+    .getStarted-content {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .extension {
+        padding-bottom: 30rem;
+    }
+
+    .thanks {
+        margin-top: -28rem;
+    }
+}
