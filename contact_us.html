@@ -4,7 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Prosoft</title>
+    <title>Contact Us | Prosoft</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.4/tailwind.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="assets/img/prosoft-logo1.png" type="image/x-icon">
@@ -85,119 +87,71 @@
 
     </nav>
 
-    <main>
+    <main style="background-image: linear-gradient(#1211170e, #020202, #020203);">
         <section class="hero">
-            <h1 class="hero-title text-light text-center">
-                Your decentralised cloud computing <br>
-                network
-            </h1>
-            <p class="text-center text-secondary mt-5 fs-5">
-                We unite cloud and blockchain to make computing sustainably cost-effective.
-            </p>
-
-            <div class="button-group d-flex justify-content-center flex-wrap">
-                <a href="#" class="button btn-document bg-transparent text-light border border-secondary">
-                    View Document
-                </a>
-                <a href="#" class="button btn-github border border-secondary d-flex justify-content-center align-items-center">
-                    <i class="fa-brands fa-github fs-3 me-1"></i>
-                    Github
-                </a>
+            <div class="text-center mt-5">
+                <h1 class="text-3xl font-semibold text-gray-200">
+                    Contact Us
+                </h1>
+                <p class="text-gray-400">
+                    Fill up the form below to send us a message.
+                </p>
             </div>
-        </section>
 
-        <section class="vision-mission d-flex justify-content-center">
-            <div class="container">
-                <!-- swiper container -->
-                <div class="swiper">
-                    <!-- swiper wrapper for sliders -->
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide d-flex justify-content-center">
-                            <div class="col-12 col-md-10">
-                                <div class="card">
-                                    <div class="card-body row">
-                                        <div class="card-image col-md-4 d-flex justify-content-center">
-                                            <img src="assets/img/vision-icon.png" alt="Prosoft vision">
-                                        </div>
-                                        <div class="card-text text-light col-md-8 d-flex flex-column justify-content-center">
-                                            <div class="card-title">
-                                                <h3>Vision</h3>
-                                            </div>
-                                            <p>
-                                                A decentralised, sustainable, and connected world where no computing
-                                                is wasted
-                                                and
-                                                to create a global network of local cloud computing resources that
-                                                are
-                                                sustainable, cost-effective, and secure.
-                                            </p>
-                                        </div>
+            <div class="flex items-center bg-gray-10" style="background-image: linear-gradient(#1211170e, #020202, #020203);">
+                <div class="container mx-auto">
+                    <div class="max-w-xl mx-auto mb-10 bg-dark p-5 rounded-md shadow-sm">
+
+                        <div class="m-7">
+                            <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                                <input type="hidden" name="access_key" value="fc18b67d-33ef-45fd-a86c-8b9d6a88d22c" />
+                                <input type="hidden" name="subject" value="New Contact Us Message from Prosoft" />
+                                <input type="checkbox" name="botcheck" id="" style="display: none;" />
+
+                                <div class="flex mb-6 space-x-4">
+                                    <div class="w-full md:w-1/2">
+                                        <label for="fname" class="block mb-2 text-sm text-gray-400">First Name</label>
+                                        <input type="text" name="name" id="first_name" placeholder="John" required
+                                            class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring bg-gray-700 text-white placeholder-gray-500 border-gray-600 focus:ring-gray-900 focus:border-gray-500" />
+                                    </div>
+                                    <div class="w-full md:w-1/2">
+                                        <label for="lname" class="block mb-2 text-sm text-gray-400">Last Name</label>
+                                        <input type="text" name="last_name" id="lname" placeholder="Doe" required
+                                            class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring bg-gray-700 text-white placeholder-gray-500 border-gray-600 focus:ring-gray-900 focus:border-gray-500" />
                                     </div>
                                 </div>
-                            </div>
-                        </div>
 
-                        <div class="swiper-slide d-flex justify-content-center">
-                            <div class="col-12 col-md-10">
-                                <div class="card">
-                                    <div class="card-body row">
-                                        <div class="card-image col-md-4">
-                                            <img src="assets/img/rocket-icon.png" alt="Prosoft vision">
-                                        </div>
-                                        <div class="card-text text-light col-md-8 d-flex flex-column justify-content-center">
-                                            <div class="card-title">
-                                                <h3>Mission</h3>
-                                            </div>
-                                            <p>
-                                                Empower people and organisations to earn and save through cheaper,
-                                                accessible, and sustainable computing by utilising spare capacity.
-                                            </p>
-                                        </div>
+                                <div class="flex mb-6 space-x-4">
+                                    <div class="w-full md:w-1/2">
+                                        <label for="email" class="block mb-2 text-sm text-gray-400">Email Address</label>
+                                        <input type="email" name="email" id="email" placeholder="you@company.com" required
+                                            class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring bg-gray-700 text-white placeholder-gray-500 border-gray-600 focus:ring-gray-900 focus:border-gray-500" />
+                                    </div>
+
+                                    <div class="w-full md:w-1/2">
+                                        <label for="phone" class="block text-sm mb-2 text-gray-400">Phone Number</label>
+                                        <input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567" required
+                                            class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring bg-gray-700 text-white placeholder-gray-500 border-gray-600 focus:ring-gray-900 focus:border-gray-500" />
                                     </div>
                                 </div>
-                            </div>
+                                <div class="mb-6">
+                                    <label for="message" class="block mb-2 text-sm text-gray-400">Your Message</label>
+
+                                    <textarea rows="5" name="message" id="message" placeholder="Your Message"
+                                        class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring bg-gray-700 text-white placeholder-gray-500 border-gray-600 focus:ring-gray-900 focus:border-gray-500" required></textarea>
+                                </div>
+                                <div class="mb-6">
+                                    <button type="submit" class="w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none">
+                                        Send Message
+                                    </button>
+                                </div>
+                                <p class="text-base text-center text-gray-400" id="result"></p>
+                            </form>
                         </div>
                     </div>
 
-                    <!-- pagination and navigation -->
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
-            </div>
-
-            <video muted loop autoplay>
-                <source src="assets/videos/global-local-network.mp4">
-            </video>
-
-            <div class="vision-overlay"></div>
-        </section>
-
-        <section class="problem-solution">
-            <div class="container text-light">
-                <h1>Today's Problems, Our Solutions</h1>
-
-                <div class="row">
-                    <div class="col-12 col-md-6">
-                        <div class="problem mt-5 mt-md-0">
-                            <h4>Problem</h4>
-                            <p>
-                                Over $1 trillion is spent on IT hardware annually.
-                            </p>
-                            <p>
-                                Yet, its computational resources are unused up to 50% of the time.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6">
-                        <div class="solution mt-5 mt-md-0">
-                            <h4>Solution</h4>
-                            <p>
-                                ProsoftChain connects blockchain developers and services to a global pool of computing power. This enables up to <span class="text-light">10x more cost-effective</span>
-                                computing, greener computing and access to a global network to power your next Metaverse, Dynamic NFT, AI, Machine Learning, DeFi or any computationally demanding dApps and smart contracts.
-                            </p>
-                        </div>
+                    <div class="text-gray-400 text-center p-10">
+                        Thank you for your interest in contacting us. If you prefer, you can also reach us directly via email at <a href="mailto:help@prosoft.com">help@prosoft.com</a>. We'll be happy to assist you.
                     </div>
                 </div>
             </div>
@@ -280,7 +234,7 @@
                     <a href="index.html">Home</a>
                 </li>
                 <li>
-                    <a href="about.html" class="active">About</a>
+                    <a href="about.html">About</a>
                 </li>
                 <li>
                     <a href="testnet.html">Developer</a>
@@ -314,32 +268,53 @@
 
     <script src="assets/js/script.js"></script>
 
-    <!-- swiper js -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
     <script>
-        let swiper = new Swiper('.swiper', {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
+        const form = document.getElementById("form");
+        const result = document.getElementById("result");
+
+        form.addEventListener("submit", function (e) {
+            const formData = new FormData(form);
+            e.preventDefault();
+            var object = {};
+            formData.forEach((value, key) => {
+                object[key] = value;
+            });
+            var json = JSON.stringify(object);
+            result.innerHTML = "Please wait...";
+
+            fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json"
+                },
+                body: json
+            })
+                .then(async (response) => {
+                    let json = await response.json();
+                    if (response.status == 200) {
+                        result.innerHTML = json.message;
+                        result.classList.remove("text-gray-500");
+                        result.classList.add("text-green-500");
+                    } else {
+                        console.log(response);
+                        result.innerHTML = json.message;
+                        result.classList.remove("text-gray-500");
+                        result.classList.add("text-red-500");
+                    }
+                })
+                .catch((error) => {
+                    console.log(error);
+                    result.innerHTML = "Something went wrong!";
+                })
+                .then(function () {
+                    form.reset();
+                    setTimeout(() => {
+                        result.style.display = "none";
+                    }, 5000);
+                });
         });
 
-        function setTopProblemSolution() {
-            // set top position of .problem-solution by sum height of hero and vision-mission height
-            let heroHeight = document.querySelector('.hero').offsetHeight;
-            let visionMissionHeight = document.querySelector('.vision-mission').offsetHeight;
-            let problemSolution = document.querySelector('.problem-solution');
-            problemSolution.style.top = heroHeight + visionMissionHeight + 'px';
-            console.log("for problem solution: ", problemSolution.style.top);
-        }
 
         function setTopFooter() {
             let footer = document.querySelector('footer');
@@ -352,7 +327,6 @@
         }
 
         setTopFooter();
-        setTopProblemSolution();
     </script>
 
     <script src="assets/js/fullnav.js"></script>
